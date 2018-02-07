@@ -17,7 +17,7 @@ artist3.save()
 artist4 = Artist.new({"artist" => "Nickelback"})
 artist4.save()
 
-artist5 = Artist.new({"artist" => "ZZ Top"})
+artist5 = Artist.new({"artist" => "ZZTop"})
 artist5.save()
 
 album1 = Album.new({
@@ -64,7 +64,7 @@ album6.save()
 
 album7 = Album.new({
   "title" => "Dark Horse",
-  "genre" => "rock",
+  "genre" => "pop",
   "artist_id" => artist4.id
   })
 album7.save()
@@ -89,8 +89,14 @@ album9.save()
 # p artist4.albums()
 # p album1.artists()
 
-artist5.artist = "ZZTop"
+artist5.artist = "ZZ Top"
 artist5.update()
+
+album9.title = "Afterburner"
+album9.update()
+
+album7.genre = "rock"
+album7.update()
 
 binding.pry
 nil
