@@ -87,7 +87,10 @@ album9.save()
 # p Album.all()
 #
 # p artist4.albums()
-p album1.artists()
+# p album1.artists()
+
+artist5.artist = "ZZTop"
+artist5.update()
 
 binding.pry
 nil
