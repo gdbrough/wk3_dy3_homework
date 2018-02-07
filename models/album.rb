@@ -54,8 +54,7 @@ class Album
     sql = "SELECT * FROM albums WHERE id = $1"
     values = [id]
     album = SQLRunner.run(sql, values)
-    album_hash = album.first
-    return Album.new(album_hash)
+    return Album.new(album.first)
   end
 
 end
