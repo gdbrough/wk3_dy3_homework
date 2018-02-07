@@ -19,5 +19,12 @@ artist4.save()
 artist5 = Artist.new({"artist" => "ZZ Top"})
 artist5.save()
 
+album1 = Album.new({
+  "title" => "Victims of the Fury",
+  "genre" => "rock",
+  "artist_id" => artist1.id
+  })
+album1.save()
+
 binding.pry
 nil
