@@ -83,10 +83,11 @@ album9 = Album.new({
   })
 album9.save()
 
-p Artist.all()
-p Album.all()
-
-p artist4.albums()
+# p Artist.all()
+# p Album.all()
+#
+# p artist4.albums()
+p album1.artists()
 
 binding.pry
 nil
