@@ -105,7 +105,9 @@ artist6.delete()
 
 album3.delete()
 
-# artist = Artist.find(4)
+artist = Artist.find(artist4.id)
+
+album = Album.find(album9.id)
 
 binding.pry
 nil
