@@ -84,6 +84,7 @@ album9 = Album.new({
 album9.save()
 
 p Artist.all()
+p Album.all()
 
 binding.pry
 nil

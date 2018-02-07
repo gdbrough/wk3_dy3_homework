@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.all()
-    sql = "SELECT artist FROM artists"
+    sql = "SELECT * FROM artists"
     artists = SQLRunner.run(sql)
     return artists.map { |artist| Artist.new(artist) }
   end
