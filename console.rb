@@ -20,6 +20,9 @@ artist4.save()
 artist5 = Artist.new({"artist" => "ZZTop"})
 artist5.save()
 
+artist6 = Artist.new({"artist" => "Vanilla Ice"})
+artist6.save()
+
 album1 = Album.new({
   "title" => "Victims of the Fury",
   "genre" => "rock",
@@ -97,6 +100,12 @@ album9.update()
 
 album7.genre = "rock"
 album7.update()
+
+artist6.delete()
+
+album3.delete()
+
+# artist = Artist.find(4)
 
 binding.pry
 nil
