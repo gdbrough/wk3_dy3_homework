@@ -86,5 +86,7 @@ album9.save()
 p Artist.all()
 p Album.all()
 
+p artist4.albums()
+
 binding.pry
 nil
