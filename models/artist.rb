@@ -48,7 +48,6 @@ class Artist
   end
 
   def self.find(id)
-    p id
     sql = "SELECT * FROM artists WHERE id = $1"
     values = [id]
     artist = SQLRunner.run(sql, values)
